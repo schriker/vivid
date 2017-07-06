@@ -1,18 +1,289 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
+         <meta name="viewport" content="width=device-width, initial-scale=1">
          <meta charset="UTF-8">
          <title>Vivid</title>
           <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,900" rel="stylesheet"> 
          <link rel="stylesheet" href="css/bootstrap.css">
          <link rel="stylesheet" href="css/font-awesome.min.css">
-         <link rel="stylesheet" href="css/style.css">
-         <script src="js/jquery-3.2.1.min.js"></script>
-         <script src="js/bootstrap.js"></script>
+         <link rel="stylesheet" href="css/style.css">          
     </head>
-    <body>
-        <div class="container-fluid">
-            <div class="row"></div>
+    <body data-spy="scroll" data-target=".spy-target">
+        <div class="loader-wrap">
+            <div class="loader">
+                <div class="loader-square"></div>
+                <div class="loader-square"></div>
+                <div class="loader-square"></div>
+                <div class="loader-square"></div>
+            </div>
         </div>
+        <div  id="home" class="container-fluid header-bg">  
+            <div class="row">
+                <div class="container-fluid main-margin">
+                    <div class="row top-row">
+                        <div class="col-xs-4 col-sm-2 logo"><a href="#home"><img src="images/logo.png" alt="Logo"></a></div>
+                        <div class="visible-xs col-xs-8">
+                            <div id="menu-toggle-xs" class="menu-button menu-open collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" role="button" aria-expanded="false">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                        </div>
+                        <div id="navbar" class="col-xs-10 hidden-xs spy-target">
+                            <div id="menu-toggle" class="menu-button">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                            <ul class="nav menu">
+                                <li><a href="#home">Home</a></li>
+                                <li><a href="#about">About us</a></li>
+                                <li><a href="#projects">Projects</a></li>
+                                <li><a href="#contact">Contact</a></li>
+                            </ul>
+                        </div>
+                        <div class="row visible-xs">
+                            <div class="col-xs-12 spy-target">
+                                <ul class="nav collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                                    <li><a href="#home">Home</a></li>
+                                    <li><a href="#about">About us</a></li>
+                                    <li><a href="#projects">Projects</a></li>
+                                    <li><a href="#contact">Contact</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row slider">
+                        <div id="scene" class="col-xs-12 hidden">
+                            <div class="layer z-shape z-shape-1" data-depth="0.20" ></div>
+                            <div class="layer z-shape z-shape-2" data-depth="0.20" ></div>
+                            <div class="layer slider-text text-center" data-depth="1.00" ><p>Interactive agency based in Poland, creating worldwide.</p></div>
+                            <div class="layer purple-t" data-depth="0.15" ></div>
+                            <div class="layer green-t" data-depth="0.15" ></div>
+                            <div class="layer v-shape" data-depth="1.00" ></div>
+                            <div class="layer green-ball" data-depth="0.10" ></div>
+                            <div class="layer purple-ball"  data-depth="0.10" ></div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-12 text-center left">
+                            <a class="scrl" href="#about"><img class="scroll" src="images/scroll.png" alt="scroll"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid white-bg">
+            <div class="container-fluid main-margin">
+                <div id="about" class="row">
+                    <div class="col-xs-12 text-center">
+                        <h1>What we do?</h1>
+                        <h2>- The Things We Are Good At - </h2>
+                    </div>
+                </div>
+                <!-- What We Do Content Start -->
+                <div class="row">
+                    <div class="col-md-6">
+                        <a class="box" href="#">
+                            <div class="row">
+                                <div class="col-xs-12">
+                                    <div class="col-lg-5 text-center">
+                                        <img src="images/icons/computer.svg" alt="FrontEnd" class="svg-icon img-responsive">
+                                        <h3>Frontend<br> Development</h3>
+                                    </div>
+                                    <div class="col-lg-7">
+                                        <p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.</p>
+                                        <span class="pull-right">More</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <hr>
+                    </div>
+                    <div class="col-md-6">
+                        <a class="box" href="#">
+                            <div class="row">
+                                <div class="col-xs-12">
+                                    <div class="col-lg-5 text-center">
+                                        <img src="images/icons/cogwheel.svg" alt="FrontEnd" class="svg-icon img-responsive">
+                                        <h3>WordPress<br>CMS</h3>
+                                    </div>
+                                    <div class="col-lg-7">
+                                        <p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.</p>
+                                        <span class="pull-right">More</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <hr>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <a class="box" href="#">
+                            <div class="row">
+                                <div class="col-xs-12">
+                                    <div class="col-lg-5 text-center">
+                                        <img src="images/icons/artist.svg" alt="FrontEnd" class="svg-icon img-responsive">
+                                        <h3>Graphic<br> Design</h3>
+                                    </div>
+                                    <div class="col-lg-7">
+                                        <p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.</p>
+                                        <span class="pull-right">More</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <hr>
+                    </div>
+                    <div class="col-md-6">
+                        <a class="box" href="#">
+                            <div class="row">
+                                <div class="col-xs-12">
+                                    <div class="col-lg-5 text-center">
+                                        <img src="images/icons/basket.svg" alt="FrontEnd" class="svg-icon img-responsive">
+                                        <h3>eCommerce<br> Platforms</h3>
+                                    </div>
+                                    <div class="col-lg-7">
+                                        <p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.</p>
+                                        <span class="pull-right">More</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <hr>
+                    </div>
+                </div>
+                <!-- What We Do Content Stop -->
+                <div class="row">
+                    <div class="col-xs-12">
+                        <img class="img-responsive rocket-bg visible-lg" src="images/rocket_bg.png" alt="">
+                    </div>
+                </div>
+                <div id="projects" class="row">
+                    <div class="col-xs-12 text-center">
+                        <h1>Our Projects</h1>
+                        <h2>- Selected Projects That We Made -</h2>
+                    </div>
+                </div>
+                <!-- Projects Content Start -->
+                <div class="row projects-bg">
+                    <div class="col-md-3">
+                        <a href="#" class="project text-center">
+                            <i class="fa fa-camera"></i>
+                            <div>
+                                <h3>Website Project title</h3>  
+                                <h4>Webdesign</h4>
+                                <span>More</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-md-3">
+                        <a href="#" class="project text-center">
+                            <i class="fa fa-camera"></i>
+                            <div>
+                                <h3>Website Project title</h3>  
+                                <h4>Webdesign</h4>
+                                <span>More</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-md-3">
+                        <a href="#" class="project text-center">
+                            <i class="fa fa-camera"></i>
+                            <div>
+                                <h3>Website Project title</h3>  
+                                <h4>Webdesign</h4>
+                                <span>More</span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-md-3">
+                        <a href="#" class="project text-center">
+                            <i class="fa fa-camera"></i>
+                            <div>
+                                <h3>Website Project title</h3>  
+                                <h4>Webdesign</h4>
+                                <span>More</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12 text-center view-portfolio">
+                        <a class="blue-btn" href="">View portfolio</a>
+                    </div>
+                </div>
+                <!-- Projects Content Stop -->
+            </div>
+        </div>
+        <div class="container-fluid">
+            <div class="container-fluid main-margin contact">
+                <div id="contact" class="row">
+                    <div class="col-xs-12 text-center">
+                        <h1>Contact Form</h1>
+                        <h2>- Have a Question? -</h2>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12 col-md-8 col-md-offset-2">
+                        <Form id="contact-form">
+                            <div class="form-line">
+                                <input id="name" type="text" required>
+                                <div class="form-border"></div>
+                                <div class="form-border-focus"></div>
+                                <label for="name">Your Name</label>
+                            </div>
+                            <div class="form-line">
+                                <input id="mail" type="text" required>
+                                <div class="form-border"></div>
+                                <div class="form-border-focus"></div>
+                                <label for="mail">E-Mail Adress</label>
+                            </div>
+                            <div class="form-line">
+                                <input id="phone" type="text" required>
+                                <div class="form-border"></div>
+                                <div class="form-border-focus"></div>
+                                <label for="phone">Phone Number</label>
+                            </div>
+                            <div class="form-line">
+                                <textarea name="msg" id="msg" rows="5" style="width:100%;" required></textarea>
+                                <div class="form-border"></div>
+                                <div class="form-border-focus"></div>
+                                <label for="msg">Message</label>
+                            </div>
+                            <div class="form-line">
+                                <button class="pull-right blue-btn contact-btn" type="submit">
+                                      Send 
+                                </button>
+                            </div>
+                        </Form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid">
+            <div class="row text-center">
+                <div class="col-xs-12">
+                    <a class="top-site" href="#home"><i class="fa fa-angle-up"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid footer">
+            <div class="container-fluid main-margin">
+                <div class="row">
+                    <div class="col-xs-10 col-md-8">Vivid Ltd. <a href="">(630) 446-8851 7246</a> - W. Windsor,Dr. - Carmichael, CA 95608</div>
+                    <div class="col-xs-2 col-md-offset-2 col-md-2 text-right social-icons">
+                        <a href=""><i class="fa fa-facebook"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="js/jquery-3.2.1.min.js"></script>
+        <script src="js/bootstrap.js"></script>
+        <script src="js/parallax.js"></script>
+        <script src="js/imagesloaded.pkgd.min.js"></script>
+        <script src="js/js.js"></script>
     </body>
 </html>
