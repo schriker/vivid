@@ -8,9 +8,8 @@ body{
     overflow-x: hidden;
 }
 .header-bg{
-    background-image: url(../images/header_bg.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
+    background: url(../images/header_bg.jpg) no-repeat center center fixed;
+    background-size: cover;
     position: relative;
     overflow: hidden;
 }
