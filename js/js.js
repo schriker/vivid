@@ -39,7 +39,7 @@ $(window).on("load", function() {
     $('.loader-wrap').fadeOut(500);
         var isIE = /*@cc_on!@*/false || !!document.documentMode;
         var isEdge = !isIE && !!window.StyleMedia;
-        if (isEdge="true")
+        if (isEdge=="true")
         {
             var scene = $('#scene').get(0);
             var parallax = new Parallax(scene);
